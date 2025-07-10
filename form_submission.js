@@ -46,10 +46,24 @@ const CONFIG = {
   SPECIAL_NAMING_QUESTION_TITLE: 'Supporting Docs (SDS, Justification, etc)',
 
   // A list of question titles to exclude from being used in the generated folder name.
-  EXCLUDE_FROM_FOLDER_NAME:,
+  EXCLUDE_FROM_FOLDER_NAME: [
+    "First Name", 
+    "Do you know the funding code or name of the fund?",
+    "Is this purchase supporting a Capstone Project, Honors Research Project, or Student Independent Research Project?",
+    "If you answered anything but no, please give the sponsoring dept, project, and Student name",
+    "Description of the items being ordered and a justification for the order (e.g. resistors and sensors for use in EW309 coursework)", 
+    "Does this order require an ITPRA/ITPR or RFR (Radio Frequency Review)?", 
+    "Does this order contain any hazardous materials (HAZMAT)? Examples include glue, paint, solvents, etc.  (If so, provide SDS sheet)",
+    "Total purchase price"
+  ],
 
   // A list of question titles to exclude from the body of the notification email.
-  EXCLUDE_FROM_EMAIL_BODY:
+  EXCLUDE_FROM_EMAIL_BODY: [
+    "One or Two keywords word describing the items being ordered (this is used for folder naming and text in email subject lines)",
+    "Do you know the funding code or name of the fund?",
+    "Is this purchase supporting a Capstone Project, Honors Research Project, or Student Independent Research Project?",
+    "If you answered anything but no, please give the sponsoring dept, project, and Student name"
+  ]
 };
 
 
